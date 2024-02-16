@@ -44,8 +44,11 @@
             if(text[i]==pattern[j])
                  j+=1;
             
-            if(j==np)
-                return (i-j+1);//cnt++;
+            if(j==np){
+                return (i-j+1);
+              //cnt++;
+              //j = lps[j-1];
+            }
         }
         
         //return cnt;
